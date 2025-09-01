@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LDPE-Abaca Composite</title>
+  <title>PROJECT PIYABE</title>
   <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
@@ -11,14 +11,21 @@
   <div id="home" class="home-visible">
     <div class="home-content" id="topContent">
       <img src="images/logo.png" alt="LDPE Abaca Logo">
-      <h1>LDPE-Abaca Composite Tiles</h1>
+      <h1>Project PIYABE - Composite Cladding Tiles</h1>
       <p><strong>One man’s trash is another man’s tile.</strong></p>
 
       <!-- View Diagram Button -->
-      <button class="icon-button" onclick="revealDiagram()">
+	  <div class="button-row">
+		<button class="icon-button" onclick="revealDiagram()">
         <img src="images/producticon.png" alt="Zoom Icon" class="icon">
         <span>View Tile</span>
-      </button>
+        </button>
+
+	  <button class="icon-button" onclick="showSection('contact')">
+		<img src="images/contacticon.png" alt="Contact Icon" class="icon">
+		<span>Contact Me</span>
+	  </button>
+	 </div>
     </div>
   </div>
 
@@ -45,7 +52,7 @@
 		<br><br>
         Abaca fibers are extracted from the leaf sheaths of the plant through both manual and mechanical methods.
         <br><br>
-        Alongside this, the Philippines produces abundant agricultural fiber waste—such as abaca—known for its tensile strength and biodegradability.
+        Alongside this, the Philippines produces abundant agricultural fiber waste, such as abaca, known for its tensile strength and biodegradability.
         <br><br>
         These manual methods are the most commonly used to extract abaca fibers, namely:
         <br><br><strong> •  Tuxying,</strong> a method of peeling off abaca leaf sheaths using a sharp knife
@@ -160,7 +167,7 @@
         <br><br>
         Alongside this, the Philippines produces abundant agricultural fiber waste, such as abaca. It is known for its strength and biodegradability.
         <br><br>
-        This research explores combining LDPE with abaca fiber to create a composite material that can be molded into floor tiles for indoor use.
+        This research explores combining LDPE with abaca fiber to create a composite material that can be molded into wall cladding tiles for indoor use.
 		<br><br>
         This solution aims to address:
         <br><br><strong> •  Waste Reduction,</strong> by repurposing post-consumer plastic and agricultural by-products,
@@ -234,11 +241,11 @@
     <div class="text-box">
       <h2>About the Product</h2>
       <p>
-        The composite tile product is an indoor flooring material made by fusing post-consumed LDPE plastic with raw and starch-treated abaca fiber.
+        The composite tile product is an indoor flooring material made by fusing post-consumed LDPE plastic with starch-treated abaca fiber.
         <br><br>
-        The process involves heating LDPE until malleable, integrating abaca fibers for reinforcement, and compressing the mixture into molds to form durable, textured tiles.
+        The process involves melting LDPE, integrating abaca fibers for reinforcement, and compressing the mixture into molds to form durable, textured tiles.
         <br><br>
-        This approach not only offers a method of repurposing hard-to-recycle plastic but also adds value to agricultural waste, promoting an eco-friendly alternative to traditional floor tiles.
+        This approach not only offers a method of repurposing hard-to-recycle plastic but also adds value to agricultural waste, promoting an eco-friendly alternative to traditional cladding tiles.
       </p>
 
       <div class="button-row">
@@ -279,6 +286,67 @@
       </button>
     </div>
   </div>
+  
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+	<div class="text-box">
+		<h2>Contact Me</h2>
+		<p>If you’d like to reach out, please fill out the form below:</p>
+
+		<form action="https://formspree.io/f/meolzlpl" method="POST" class="contact-form">
+		<label for="name">Name:</label><br>
+		<input type="text" name="name" id="name" required><br><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" name="_replyto" id="email" required><br><br>
+
+		<label for="rating">Rate this website:</label><br>
+		<div class="star-rating">
+			<input type="radio" name="rating" value="5" id="5"><label for="5">★</label>
+			<input type="radio" name="rating" value="4" id="4"><label for="4">★</label>
+			<input type="radio" name="rating" value="3" id="3"><label for="3">★</label>
+			<input type="radio" name="rating" value="2" id="2"><label for="2">★</label>
+			<input type="radio" name="rating" value="1" id="1"><label for="1">★</label>
+		</div>
+		<br>
+
+		<label for="message">Message:</label><br>
+		<textarea name="message" id="message" rows="5"></textarea><br><br>
+		
+		<input type="hidden" name="_redirect" value="thankyou.html">
+		<button type="submit" class="icon-button">Send Message (˵ •̀ ᴗ - ˵ ) ✧</button>
+		</form>
+
+    <button class="icon-button" onclick="resetView()">
+      <img src="images/homeicon.png" alt="Home Icon" class="icon">
+      <span>Return to Home</span>
+    </button>
+  </div>
+</div>
+
+<!-- References Button -->
+<button id="showReferencesBtn" class="references-button">
+ 🕮 View References ⚯ ͛  
+</button>
+
+<!-- References Section (Initially Hidden) -->
+<footer id="references" class="references-hidden">
+  <h2>References</h2>
+  <ul>
+    <li>Kumar, S., Prasad, L., Patel, V. K., Kumar, V., Kumar, A., Yadav, A., & Winczek, J. (2021). Physical and Mechanical Properties of Natural Leaf Fiber-Reinforced Epoxy Polyester Composites. <i>Polymers, 13</i>(9), 1369. <a href="https://doi.org/10.3390/POLYM13091369" target="_blank">https://doi.org/10.3390/POLYM13091369</a></li>
+	
+	<li>Nijssen, R. P. L. (2015). <i>Composite materials: An introduction</i> (1st ed.). VKCN / Inholland University of Applied Sciences. <a href="https://compositesnl.nl/wp-content/uploads/2019/10/Composites-an-introduction-1st-edition-EN.pdf" target="_blank">PDF</a></li>
+    
+	<li>Radoor, S., Karayil, J., Sanjay, M. R., & Siengchin, S. (2020). A review on the extraction of pineapple, sisal and abaca fibers and their use as reinforcement in polymer matrix. <i>Express Polymer Letters, 14</i>(4), 309-335.</li>
+
+    <li>Rajendran, R., Royan, N., Leong, J., Chan, W., Tan, J., & Shamsuddin, Z. (2021). Current state and challenges of natural fibre-reinforced polymer composites as feeder in FDM-based 3D printing. <i>Polymers, 13</i>, 2289. <a href="https://doi.org/10.3390/polym13142289" target="_blank">https://doi.org/10.3390/polym13142289</a></li>
+
+    <li>World Bank Group. (2021). <i>Market study for the Philippines: Plastics circularity opportunities and barriers.</i> Marine Plastics Series, East Asia and Pacific Region. Washington, DC: World Bank. <a href="https://hdl.handle.net/10986/35295" target="_blank">https://hdl.handle.net/10986/35295</a></li>
+
+    <li>Zaman, H. U., Khan, M. A., & Khan, R. A. (2011). A comparative study on the mechanical and degradation properties of plant fibers reinforced polyethylene composites. <i>Polymer Composites, 32</i>(10), 1552–1560. <a href="https://doi.org/10.1002/pc.21168" target="_blank">https://doi.org/10.1002/pc.21168</a></li>
+  </ul>
+</footer>
+
 
   <script src="script2.js"></script>
 </body>
