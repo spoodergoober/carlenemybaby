@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Composite Tile Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TITLE SCREEN -->
+  <div id="titlePage" class="section active">
+    <h1>LDPE-Abaca Tile Composite Simulation</h1>
+    <p><strong>One man’s trash is another man’s tile.</strong></p>
+	<a href="index.html" class="button-link">About Tiles</a>
+	<br><br>
+    <button onclick="startSimulation()">Start Simulation</button>
+  </div>
+
+  <!-- STEP 1 -->
+  <div id="step1" class="section">
+    <h2>Step 1: Collect LDPE Waste</h2>
+    <p>Drag plastics to the bin to collect (¬_¬")</p>
+     <iframe src="https://scratch.mit.edu/projects/1197886132/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+		<br>
+		<br>
+    <button id="next1" onclick="nextSection('step2')">Next ദ്ദി(ᵔᗜᵔ)</button>
+  </div>
+  
+<!-- STEP 2 -->
+<div id="step2" class="section">
+  <h2>Step 2: Add Abaca Fiber</h2>
+  <p>Drag the materials into the mold (づᴗ_ᴗ)づ</p>
+<iframe src="https://scratch.mit.edu/projects/1197891024/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+		<br>
+		<br>
+  <button id="next3" onclick="nextSection('step4')">Next ദ്ദി(ᵔᗜᵔ)</button>
+</div>
+
+  <!-- STEP 3 -->
+  <div id="step3" class="section">
+    <h2>Step 3: Heat the LDPE</h2>
+    <p>Heat the plastic by holding the 0 key (´• ω •`)</p>
+     <iframe src="https://scratch.mit.edu/projects/1197888846/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+		<br>
+		<br>
+    <button id="next2" onclick="nextSection('step3')">Next ദ്ദി(ᵔᗜᵔ)</button>
+  </div>
+  
+<!-- STEP 4 -->
+<div id="step4" class="section">
+  <h2>Step 4: Press the Mold</h2>
+  <p>Drag the weight onto the mold to compress the tile (ᵕ—ᴗ—)</p>
+<iframe src="https://scratch.mit.edu/projects/1197891667/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+		<br>
+    <h3>Composite tile complete ( ˶°ㅁ°) !!</h3>
+
+<button id="quickquiz" onclick="nextSection('quiz')">Quick quiz (⊙ _ ⊙ )</button>
+</div>
+
+<!-- QUIZ SECTION -->
+<div id="quiz" class="section">
+  <h2>Quick Quiz: Test Your Knowledge!</h2>
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <fieldset>
+      <legend>1. What is abaca most commonly used for?</legend>
+      <label><input type="radio" name="q1" value="wrong"> Plastic bottles</label><br>
+      <label><input type="radio" name="q1" value="correct"> Ropes and twines</label><br>
+      <label><input type="radio" name="q1" value="wrong"> Food containers</label>
+    </fieldset>
+
+    <!-- Question 2 -->
+    <fieldset>
+      <legend>2. Why is starch treatment applied to abaca fibers?</legend>
+      <label><input type="radio" name="q2" value="wrong"> To make fibers waterproof</label><br>
+      <label><input type="radio" name="q2" value="correct"> To improve bonding with LDPE</label><br>
+      <label><input type="radio" name="q2" value="wrong"> To add color to the fibers</label>
+    </fieldset>
+
+    <!-- Question 3 -->
+    <fieldset>
+      <legend>3. What is LDPE commonly used for?</legend>
+      <label><input type="radio" name="q3" value="correct"> Plastic bags and film wraps</label><br>
+      <label><input type="radio" name="q3" value="wrong"> Beverage bottles</label><br>
+      <label><input type="radio" name="q3" value="wrong"> Metal cans</label>
+    </fieldset>
+
+    <!-- Question 4 -->
+    <fieldset>
+      <legend>4. What is the main goal of combining LDPE with abaca fiber?</legend>
+      <label><input type="radio" name="q4" value="wrong"> To make plastic transparent</label><br>
+      <label><input type="radio" name="q4" value="correct"> To create stronger, sustainable tiles</label><br>
+      <label><input type="radio" name="q4" value="wrong"> To increase water absorption</label>
+    </fieldset>
+
+    <!-- Question 5 -->
+    <fieldset>
+      <legend>5. Which plastic type is labeled with recycling code 4?</legend>
+      <label><input type="radio" name="q5" value="wrong"> PET</label><br>
+      <label><input type="radio" name="q5" value="correct"> LDPE</label><br>
+      <label><input type="radio" name="q5" value="wrong"> HDPE</label>
+    </fieldset>
+
+    <br>
+    <button type="button" id="submitQuiz">Submit Answers ᕙ(  •̀ ᗜ •́  )ᕗ</button>
+  </form>
+  <div id="quizResult" style="margin-top:20px; font-size:18px; font-weight:bold;"></div>
+  <br>
+   <button id="next4" onclick="finishsimulation()">Finish Simulation ৻(  •̀ ᗜ •́  ৻)</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

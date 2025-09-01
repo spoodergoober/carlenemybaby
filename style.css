@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'hsr';
+  src: url('fonts/hsr.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'genshin';
+  src: url('fonts/genshin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'hsr2';
+  src: url('fonts/hsr2.ttf') format('truetype');
+}
+
+body {
+  font-family: 'hsr';
+  background: url('images/bg.png') center/cover no-repeat fixed;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+button {
+  font-family: "hsr";
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #b4ced6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a686c;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #b4ced6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section {
+  display: none;
+  padding: 40px 20px;
+  min-height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "genshin";
+  font-size: 40px;
+  color: #b4ced6;
+}
+
+h2 {
+  font-family: "hsr2";
+  color: black;
+}
+
+
+.active {
+  display: block;
+}
+
+button {
+  padding: 15px 25px;
+  background-color: #b4ced6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#titlePage {
+  height: 100vh;
+  background: url('bg.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#quiz {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#quiz form {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#quiz fieldset {
+  border: none;
+  margin-bottom: 15px;
+}
+
+#quiz legend {
+  display: block;
+  font-family: 'hsr2';
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+  text-align: left;
+}
+
+#quiz label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#submitQuiz {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #b4ced6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#submitQuiz:hover {
+  background-color: #5a686c;
+}

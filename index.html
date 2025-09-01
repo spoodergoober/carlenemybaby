@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LDPE-Abaca Composite</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- Home Section -->
+  <div id="home" class="home-visible">
+    <div class="home-content" id="topContent">
+      <img src="images/logo.png" alt="LDPE Abaca Logo">
+      <h1>LDPE-Abaca Composite Tiles</h1>
+      <p><strong>One man’s trash is another man’s tile.</strong></p>
+
+      <!-- View Diagram Button -->
+      <button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Diagram Section (Initially Hidden) -->
+  <div id="diagramWrapper">
+  <h1>Composite Tile Composition</h1>
+  <p><strong>Click each layer to learn more.</strong></p>
+    <div class="composite-diagram">
+      <div class="layer ldpe-top" onclick="showSection('context')" title="Context of LDPE Waste"></div>
+      <div class="layer abaca" onclick="showSection('abaca')" title="About Abaca Fibers"></div>
+      <div class="layer ldpe-bottom" onclick="showSection('product')" title="About Product"></div>
+    </div>
+    <button class="home-button with-icon" onclick="resetView()">
+      <img src="images/homeicon.png" alt="Home Icon" class="icon">
+      <span>Return to Home</span>
+    </button>
+  </div>
+  <!-- Abaca Section -->
+  <div id="abaca" class="section">
+    <div class="text-box">
+		<h2>About Abaca Fibers</h2>
+		<p>
+		The abaca plant, also known as "Manila hemp" or Musa textilis, is native to the Philippines. The plant is cultivated mainly for its fibers, which are most often used in ropes, twines, and the like. This is due to its high mechanical strength and biodradability, making it widely used for applications requiring strength or durability.
+		<br><br>
+        Abaca fibers are extracted from the leaf sheaths of the plant through both manual and mechanical methods.
+        <br><br>
+        Alongside this, the Philippines produces abundant agricultural fiber waste—such as abaca—known for its tensile strength and biodegradability.
+        <br><br>
+        These manual methods are the most commonly used to extract abaca fibers, namely:
+        <br><br><strong> •  Tuxying,</strong> a method of peeling off abaca leaf sheaths using a sharp knife
+        <br><br><strong> •  Stripping,</strong> a way of extracting fibers with a stripping machine or hand blade
+        <br><br><strong> •  Drying,</strong> done through either air or sun-drying fibers to reduce moisture content
+      </p>
+	  <div class="button-row">
+        <button class="icon-button" onclick="showSection('fibersimulation')">
+          <img src="images/contexticon.png" alt="Fiber Icon" class="icon">
+          <span>View Simulation</span>
+        </button>
+
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+	  </div>
+    </div>
+  </div>
+  
+   <!-- Fiber Simulation Section -->
+<div id="fibersimulation" class="section">
+  <div class="text-box">
+    <h2>Simulate the abaca fiber extraction process!</h2>
+
+    <div class="iframe-wrapper">
+      <iframe src="https://scratch.mit.edu/projects/1202516545/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+    </div>
+
+    <br>
+	  <div class="button-row">
+        <button class="icon-button" onclick="showSection('starch')">
+          <img src="images/starchicon.png" alt="Starch Icon" class="icon">
+          <span>About Starch Treatment</span>
+        </button>
+
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+	  </div>
+  </div>
+</div>
+
+  <!-- Starch Section -->
+  <div id="starch" class="section">
+    <div class="text-box">
+		<h2>About Starch Treatment</h2>
+		<p>
+		Due to LDPE being hydrophobic (water resistant) and abaca fibers being hydrophilic (water absorbing), they may have poor adhesion with one another.
+		<br><br>
+        Surface treatments are used to improve the adhesion between these two materials.
+        <br><br>
+        Chemical treatments that are typically used are too harsh, expensive, and not environmentally friendly. Therefore, starch treatment offers a sustainable and biodegradable option to improve bonding between the materials.
+        <br><br>
+        Starch treatment promotes better bonding by:
+        <br><br>•  Providing a <strong>starch coating</strong> unto the abaca fibers
+        <br><br>•  <strong>Filling in</strong> the large gaps between the materials
+        <br><br>•  Contributing to <strong>enhanced strength</strong> due to less gaps
+      </p>
+	  <div class="button-row">
+        <button class="icon-button" onclick="showSection('starchsimulation')">
+          <img src="images/starchicon.png" alt="Starch Icon" class="icon">
+          <span>View Simulation</span>
+        </button>
+
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+	  </div>
+    </div>
+  </div>
+     <!-- Starch Simulation Section -->
+<div id="starchsimulation" class="section">
+  <div class="text-box">
+    <h2>Simulate the starch treatment process!</h2>
+
+    <div class="iframe-wrapper">
+      <iframe src="https://scratch.mit.edu/projects/1202744491/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+    </div>
+
+    <br>
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+  </div>
+</div>
+  <!-- Context Section -->
+  <div id="context" class="section">
+    <div class="text-box">
+      <h2>Context</h2>
+      <p>
+		Plastic production has spiked during recent years, with most plastics comprised of single-use plastics such as plastic bags. While plastic waste has been increasing, only a small amount of these plastics are collected to be recycled.
+		<img src="images/figure.png" alt="Recycling rates of plastic">
+		Note. Reprinted from Market study for the Philippines: Plastics circularity opportunities and barriers, World Bank Group (2021).
+		<br><br>
+        Low-Density Polyethylene (LDPE) is a common thermoplastic used in consumer packaging, yet it is rarely recycled through traditional means due to its flexibility and contamination issues.
+        <br><br>
+        Alongside this, the Philippines produces abundant agricultural fiber waste, such as abaca. It is known for its strength and biodegradability.
+        <br><br>
+        This research explores combining LDPE with abaca fiber to create a composite material that can be molded into floor tiles for indoor use.
+		<br><br>
+        This solution aims to address:
+        <br><br><strong> •  Waste Reduction,</strong> by repurposing post-consumer plastic and agricultural by-products,
+        <br><br><strong> •  Material Innovation,</strong> through composite technology that enhances the mechanical strength of recycled LDPE,
+        <br><br><strong> •  Sustainability,</strong> by promoting upcycling practices in material science and construction design.
+      </p>
+	  <div class="button-row">
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+		
+		
+		<button class="icon-button"  onclick="showSection('aboutplastic')">
+		<img src="images/plasticicon.png" alt="Plastic Icon" class="icon">
+		<span>About Plastics</span>
+        </button>
+	 </div>
+    </div>
+  </div>
+  
+ <!-- Plastics Section -->
+  <div id="aboutplastic" class="section">
+    <div class="text-box">
+		<h2>About Plastics</h2>
+		<p>
+		Plastics are categorized into multiple types, and are distinguishable through recycling labels.
+		<br><br>
+        Recycling labels have various numbers that indicate the plastic type, making recycling easier.
+        <br><br>
+        These labels categorize plastics into seven (7) groups, including:
+		<img src="images/recyclinglabels.png" alt="Table of plastics">        
+      </p>
+	  <div class="button-row">
+        <button class="icon-button" onclick="showSection('plasticsimulation')">
+          <img src="images/plasticsimicon.png" alt="Plastic Simulation Icon" class="icon">
+          <span>View Simulation</span>
+        </button>
+
+		<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+	  </div>
+    </div>
+  </div>
+  
+   <!-- Plastic Simulation Section -->
+<div id="plasticsimulation" class="section">
+  <div class="text-box">
+    <h2>Identify the plastics!</h2>
+
+    <div class="iframe-wrapper">
+      <iframe src="https://scratch.mit.edu/projects/1208970762/embed"
+        allowtransparency="true"
+        width="585"
+        height="502"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen></iframe>
+    </div>
+	
+	<button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+        </button>
+	</div>
+</div>
+	
+  <!-- About Product Section -->
+  <div id="product" class="section">
+    <div class="text-box">
+      <h2>About the Product</h2>
+      <p>
+        The composite tile product is an indoor flooring material made by fusing post-consumed LDPE plastic with raw and starch-treated abaca fiber.
+        <br><br>
+        The process involves heating LDPE until malleable, integrating abaca fibers for reinforcement, and compressing the mixture into molds to form durable, textured tiles.
+        <br><br>
+        This approach not only offers a method of repurposing hard-to-recycle plastic but also adds value to agricultural waste, promoting an eco-friendly alternative to traditional floor tiles.
+      </p>
+
+      <div class="button-row">
+        <button class="icon-button" onclick="showSection('composition')">
+          <img src="images/compicon.png" alt="Composition Icon" class="icon">
+          <span>Composite Details</span>
+        </button>
+
+		<a href="website.html" class="icon-button">
+		  <img src="images/simicon.png" alt="Simulation Icon" class="icon">
+		  <span>Simulation Steps</span>
+		</a>
+	</div>
+
+      <br><br>
+	  <button class="icon-button" onclick="revealDiagram()">
+        <img src="images/producticon.png" alt="Zoom Icon" class="icon">
+        <span>View Tile</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Composite Composition Section -->
+  <div id="composition" class="section">
+    <div class="text-box">
+      <h2>Composite Composition</h2>
+      <p>
+	    This study is grounded with the theory of fiber-reinforced composites. As described by Nijssen (2015), a composite is comprised of two macroidentifiable materials to strengthen overall mechanical performance.
+		<br><br>
+        LDPE acts as the polymer matrix, while abaca fiber serves as the reinforcement. This fiber-reinforced plastic gains improved tensile strength and rigidity while reducing brittleness.
+        <br><br>
+        The success of the tile depends on the bond between the polymer matrix and the reinforcement, which can be improved by chemical or surface treatment of the abaca fiber.
+		<img src="images/conceptual.png" alt="Conceptual Framework">
+      </p>
+      <button class="home-button with-icon" onclick="showSection('product')">
+        <img src="images/producticon.png" alt="Back Icon" class="icon">
+        <span>Return to Product</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
