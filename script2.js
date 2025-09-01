@@ -85,3 +85,16 @@ function showSection(sectionId) {
     }, 10);
   }
 }
+
+// Toggle References Section
+document.getElementById("showReferencesBtn").addEventListener("click", function() {
+  const refs = document.getElementById("references");
+  
+  refs.classList.toggle("references-visible");
+  refs.classList.toggle("references-hidden");
+  
+  // Auto-scroll into view when opening
+  if (refs.classList.contains("references-visible")) {
+    refs.scrollIntoView({ behavior: "smooth" });
+  }
+});
