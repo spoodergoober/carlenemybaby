@@ -267,3 +267,151 @@ button:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Contact form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align contents to left */
+  gap: 2px;
+  max-width: 800px;
+  margin: 0; /* remove auto-centering */
+}
+
+/* Field groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* tighter spacing between label and input */
+}
+
+.form-group label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs and textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: "hsr", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;  /* centers the stars */
+  gap: 5px;
+  margin-top: 5px;
+  width: 100%;  /* make sure they center in the form's width */
+}
+
+/* Center the send button only */
+.contact-form button {
+  display: block;
+  margin: 15px auto 0;
+}
+
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 32px;
+  cursor: pointer;
+  color: #aaa;  /* gray by default */
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+
+/* Selected effect */
+.star-rating input:checked ~ label {
+  color: gold;
+}
+
+#contact .text-box {
+  text-align: left; 
+  padding-left: 20px; /* adjust this to taste */
+}
+
+/* References Button */
+.references-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: #6a9fb5; /* 🔵 Different color */
+  color: white;
+  font-family: "hsr2", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.references-button:hover {
+  background-color: #486d7d;
+}
+
+/* References Section Hidden by Default */
+.references-hidden {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+}
+
+/* References Section Visible */
+.references-visible {
+  max-height: 1000px; /* plenty of room */
+  opacity: 1;
+}
+
+/* Styling the references */
+#references {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  border-top: 3px solid #6a9fb5;
+}
+
+#references h2 {
+  font-family: 'hsr2';
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#references ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#references li {
+  margin-bottom: 12px;
+}
+
+#references a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+#references a:hover {
+  text-decoration: underline;
+}
