@@ -2,13 +2,21 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "hsr", sans-serif;
-  background-image: url("images/bg2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   text-align: center;
   color: #333;
+}
+
+/* Default title page background */
+body {
+  background: url("images/bg2.png") no-repeat center center;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Disable background when not on title page */
+body.no-bg {
+  background: none !important;
+  background-color: #fffaf4 !important; /* solid fallback */
 }
 
 /* Fonts */
@@ -414,4 +422,28 @@ button:hover {
 
 #references a:hover {
   text-decoration: underline;
+}
+
+/* ----- Title-page background toggle ----- */
+/* Apply the image when body does NOT have .no-bg */
+body:not(.no-bg) {
+  background-image: url("images/bg2.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Remove background on other pages */
+body.no-bg {
+  background: none !important;
+  background-color: #fffaf4 !important; /* fallback background when image removed */
+}
+
+/* Keep references toggle working via display (script controls this) */
+#references.references-hidden {
+  /* keep CSS transition behaviour but allow script to hide via display: none */
+}
+#references.references-visible {
+  /* keep CSS transition behaviour */
 }
